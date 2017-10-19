@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+tools:context="ke.or.mamacare.mamacare.DeviceListActivity">
+<TextView android:id="@+id/title_paired_devices"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="normal|bold"
+    android:textSize="16dp"
+android:gravity="center"
+    android:text="SELECT FROM THESE PAIRED DEVICES:"
+
+    android:textColor="#000"
+    android:padding="5dp"
+    />
+<ListView android:id="@+id/paired_devices"
+    android:layout_width="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_height="wrap_content"
+    android:stackFromBottom="false"
+    android:layout_weight="1"
+    />
+
+<TextView
+    android:id="@+id/connecting"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:textStyle="normal"
+    android:textSize="15dp"
+    android:textColor="#f00"/>
+
+<TextView
+    android:id="@+id/infoText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="If no devices are listed please pair your device from the phone's settings"
+    android:textStyle="normal"
+    android:lineSpacingExtra="3dp"
+    android:padding="5dp"
+    android:gravity="center"
+    android:textSize="14dp"
+    android:textColor="#00e"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+</LinearLayout>
+
+</LinearLayout>

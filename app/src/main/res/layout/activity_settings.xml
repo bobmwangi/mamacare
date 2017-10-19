@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="6dp"
+    android:orientation="vertical"
+    tools:context="ke.or.mamacare.mamacare.SettingsActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#f00"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="App preferences"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:typeface="normal"
+            android:id="@+id/AppPref"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:id="@+id/CBP"
+            android:textSize="16dp"
+            android:text="Require password for hospitals"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#666"
+            android:gravity="start"
+            android:text="A password is not required."
+            android:textSize="14sp"
+            android:paddingLeft="20dp"
+            android:typeface="normal"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/passwordText"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:paddingLeft="4dp"
+            android:textColor="#000"
+            android:onClick="setName"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:padding="8dp"
+            android:typeface="normal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#666"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:onClick="setName"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:typeface="normal"
+            android:id="@+id/TXTUSERNAME"
+            />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set password"
+            android:paddingLeft="4dp"
+            android:textColor="#000"
+            android:onClick="setPassword"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:padding="8dp"
+            android:typeface="normal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#666"
+            android:onClick="setPassword"
+            android:gravity="start"
+            android:clickable="true"
+            android:text="Set a password to be used before accessing hospitals."
+            android:textSize="14sp"
+            android:paddingLeft="20dp"
+            android:typeface="normal"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/setpw"
+            />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

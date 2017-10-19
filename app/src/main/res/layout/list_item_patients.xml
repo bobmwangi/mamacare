@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:orientation="vertical">
+
+
+    <!-- Album id / Hidden by default -->
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- Album Name -->
+
+    <TextView
+        android:id="@+id/PatientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:padding="20dp"
+        android:focusable="false"
+        android:autoLink="none"
+        android:textColor="#666"
+        android:paddingTop="5dip"
+        android:textStyle="bold"/>
+
+
+
+
+
+</LinearLayout>

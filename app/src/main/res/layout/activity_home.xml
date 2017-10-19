@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    tools:context="ke.or.mamacare.mamacare.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:textStyle="normal|bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/usernmaeTVIN"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#f45464"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:typeface="normal"
+            android:id="@+id/usernameTV"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:text="Mamacare is an application which aides record data of mothers during delivery period."
+            android:textSize="20dp"
+            android:typeface="normal"
+            android:lineSpacingExtra="3dp"
+            android:padding="5dp"
+            android:id="@+id/about"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#666"
+            android:text="www.mamacare.or.ke"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:autoLink="all"
+        android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:typeface="normal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#666"
+            android:text="www.mamacare.or.ke/admin"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:autoLink="all"
+            android:textSize="20dp"
+            android:typeface="normal"
+            />
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+   <!--     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:onClick="st"
+                android:padding="10dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings" />
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:typeface="normal"
+                android:gravity="center_vertical"
+                android:onClick="st"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:text="Settings"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+
+        <!--<android.support.v7.widget.AppCompatButton-->
+        <Button
+            android:id="@+id/btn_sig1nup"
+            android:layout_width="match_parent"
+            android:layout_weight="0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#f45464"
+            android:textColor="#fff"
+            android:layout_marginBottom="24dp"
+            android:onClick="hospitals"
+            android:padding="12dp"
+            android:text="Collect data"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

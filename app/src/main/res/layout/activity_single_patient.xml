@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_single_patient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    tools:context="ke.or.mamacare.mamacare.SinglePatientActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/pName"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:textColor="#00e"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="0"
+            android:id="@+id/pId"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#666"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/pHosp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="0"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#666"/>
+</LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0"
+            android:background="#e2d8d9"
+            android:textColor="#000"
+            android:layout_marginBottom="4dp"
+            android:onClick="generateGraph"
+            android:padding="3dp"
+            android:text="Generate graph"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+       <!-- <android.support.v7.widget.AppCompatButton
+            android:id="@+id/addbt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_weight="0"
+            android:background="#e2d8d9"
+            android:textColor="#000"
+            android:layout_marginBottom="4dp"
+            android:onClick="addData"
+            android:padding="12dp"
+            android:text="Add new data via bluetooth"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/addbt2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_weight="0"
+            android:background="#e2d8d9"
+            android:textColor="#000"
+            android:layout_marginBottom="4dp"
+            android:onClick="addData2"
+            android:padding="12dp"
+            android:text="Bluetooth 2"/>-->
+ <!--       <com.jjoe64.graphview.GraphView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/graph" />-->
+
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/graph" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical" >
+
+        <Button
+     android:id="@+id/addbdt3"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="14dp"
+     android:layout_gravity="bottom"
+            android:layout_weight="0"
+     android:background="#e2d8d9"
+     android:textColor="#000"
+     android:layout_marginBottom="4dp"
+     android:onClick="connectDevice"
+     android:padding="3dp"
+     android:text="Connect to device"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:text="Ensure bluetooth is turned ON"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="#666"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

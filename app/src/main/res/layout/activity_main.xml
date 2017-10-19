@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="ke.or.mamacare.mamacare.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MamaCare"
+                android:textSize="50dp"
+                android:id="@+id/welcome"
+                android:gravity="center"
+                android:textColor="#144"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:src="@drawable/motherbaby"
+    android:layout_gravity="center"
+    android:adjustViewBounds="true"
+    android:layout_height="250dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A mobile health companion"
+                android:textSize="28dp"
+
+                android:id="@+id/tagline"
+                android:gravity="center"
+                android:textColor="#144"/>
+            <!--flaticon.com-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
